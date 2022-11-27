@@ -1,0 +1,66 @@
+[0.017s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jonasvinol/Desktop/G1FinalProject/src/basic_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot
+[0.083s] -- The C compiler identification is GNU 9.4.0
+[0.159s] -- The CXX compiler identification is GNU 9.4.0
+[0.166s] -- Check for working C compiler: /usr/bin/cc
+[0.246s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.247s] -- Detecting C compiler ABI info
+[0.323s] -- Detecting C compiler ABI info - done
+[0.344s] -- Detecting C compile features
+[0.345s] -- Detecting C compile features - done
+[0.348s] -- Check for working CXX compiler: /usr/bin/c++
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.439s] -- Detecting CXX compiler ABI info
+[0.528s] -- Detecting CXX compiler ABI info - done
+[0.551s] -- Detecting CXX compile features
+[0.552s] -- Detecting CXX compile features - done
+[0.555s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.583s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.583s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.814s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.842s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.938s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.940s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.941s] -- Added test 'lint_cmake' to check CMake code style
+[0.942s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.944s] -- Added test 'xmllint' to check XML markup files
+[0.947s] -- Configuring done
+[0.950s] -- Generating done
+[0.951s] -- Build files have been written to: /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
+[0.957s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jonasvinol/Desktop/G1FinalProject/src/basic_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot
+[0.960s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot -- -j6 -l6
+[0.998s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot -- -j6 -l6
+[1.030s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
+[1.038s] -- Install configuration: ""
+[1.038s] -- Execute custom install script
+[1.039s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/Materials.xacro
+[1.048s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot.urdf.xacro
+[1.057s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot_core.xacro
+[1.066s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/depth_camera.xacro
+[1.075s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/gazebo_control.xacro
+[1.084s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/inertial_macros.xacro
+[1.093s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/launch_sim.py
+[1.102s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/rsp.launch.py
+[1.111s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/barrels.world
+[1.121s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/empty.world
+[1.130s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/house.world
+[1.139s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/powerplant.world
+[1.148s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/simple_env_1.world
+[1.157s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/simple_env_2.world
+[1.166s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/small_city.world
+[1.175s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/config/view_basic_robot.rviz
+[1.184s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/package_run_dependencies/basic_robot
+[1.193s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/parent_prefix_path/basic_robot
+[1.202s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.sh
+[1.210s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.dsv
+[1.219s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.sh
+[1.228s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.dsv
+[1.238s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.bash
+[1.247s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.sh
+[1.255s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.zsh
+[1.265s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.dsv
+[1.273s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.dsv
+[1.282s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/packages/basic_robot
+[1.291s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig.cmake
+[1.301s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig-version.cmake
+[1.311s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.xml
+[1.324s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
