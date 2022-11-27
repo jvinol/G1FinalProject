@@ -1,0 +1,29 @@
+[0.029s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot -- -j6 -l6
+[0.070s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot -- -j6 -l6
+[0.118s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
+[0.127s] -- Install configuration: ""
+[0.127s] -- Execute custom install script
+[0.128s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/Materials.xacro
+[0.130s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot.urdf.xacro
+[0.130s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot_core.xacro
+[0.130s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/gazebo_control.xacro
+[0.130s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/inertial_macros.xacro
+[0.130s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/launch_sim.py
+[0.130s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/rsp.basic_robot_launch.py
+[0.131s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/empty.world
+[0.132s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/package_run_dependencies/basic_robot
+[0.132s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/parent_prefix_path/basic_robot
+[0.133s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.sh
+[0.133s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.dsv
+[0.134s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.sh
+[0.134s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.dsv
+[0.135s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.bash
+[0.135s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.sh
+[0.136s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.zsh
+[0.136s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.dsv
+[0.137s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.dsv
+[0.146s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/packages/basic_robot
+[0.147s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig.cmake
+[0.147s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig-version.cmake
+[0.148s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.xml
+[0.153s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
