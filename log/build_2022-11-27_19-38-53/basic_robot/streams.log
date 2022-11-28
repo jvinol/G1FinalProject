@@ -1,0 +1,43 @@
+[0.205s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot -- -j6 -l6
+[0.920s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot -- -j6 -l6
+[0.960s] Invoking command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
+[0.968s] -- Install configuration: ""
+[0.969s] -- Execute custom install script
+[0.971s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/Materials.xacro
+[0.971s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot.urdf.xacro
+[0.972s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot_core.xacro
+[0.972s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/depth_camera.xacro
+[0.972s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/gazebo_control.xacro
+[0.973s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/inertial_macros.xacro
+[0.973s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/lidar.xacro
+[0.983s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/launch_sim.py
+[0.983s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/rsp.launch.py
+[0.985s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/Building/model.config
+[0.985s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/Building/model.sdf
+[0.985s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/barrels.world
+[0.986s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/empty.world
+[0.986s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/house.world
+[0.987s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/my_world.world
+[0.987s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/my_world2.world
+[0.996s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/obstacles.world
+[1.005s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/powerplant.world
+[1.005s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/simple_env_1.world
+[1.006s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/simple_env_2.world
+[1.006s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/small_city.world
+[1.007s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/config/view_basic_robot.rviz
+[1.007s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/package_run_dependencies/basic_robot
+[1.008s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/parent_prefix_path/basic_robot
+[1.009s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.sh
+[1.009s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.dsv
+[1.010s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.sh
+[1.010s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.dsv
+[1.011s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.bash
+[1.011s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.sh
+[1.012s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.zsh
+[1.012s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.dsv
+[1.013s] -- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.dsv
+[1.022s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/packages/basic_robot
+[1.023s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig.cmake
+[1.023s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig-version.cmake
+[1.024s] -- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.xml
+[1.027s] Invoked command in '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jonasvinol/Desktop/G1FinalProject/build/basic_robot
