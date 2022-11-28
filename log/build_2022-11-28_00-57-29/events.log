@@ -1,0 +1,838 @@
+[0.000000] (-) TimerEvent: {}
+[0.000292] (basic_robot) JobQueued: {'identifier': 'basic_robot', 'dependencies': OrderedDict()}
+[0.000556] (pcl_conversions) JobQueued: {'identifier': 'pcl_conversions', 'dependencies': OrderedDict()}
+[0.000587] (pcl_ros) JobQueued: {'identifier': 'pcl_ros', 'dependencies': OrderedDict([('pcl_conversions', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions')])}
+[0.001153] (perception_pcl) JobQueued: {'identifier': 'perception_pcl', 'dependencies': OrderedDict([('pcl_conversions', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions'), ('pcl_ros', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros')])}
+[0.001193] (pcl_conversions) JobStarted: {'identifier': 'pcl_conversions'}
+[0.019803] (basic_robot) JobStarted: {'identifier': 'basic_robot'}
+[0.031026] (pcl_conversions) JobProgress: {'identifier': 'pcl_conversions', 'progress': 'cmake'}
+[0.031683] (pcl_conversions) Command: {'cmd': ['/usr/bin/cmake', '/home/jonasvinol/Desktop/G1FinalProject/src/perception_pcl/pcl_conversions', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[0.038226] (basic_robot) JobProgress: {'identifier': 'basic_robot', 'progress': 'cmake'}
+[0.038996] (basic_robot) JobProgress: {'identifier': 'basic_robot', 'progress': 'build'}
+[0.041464] (basic_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot', '--', '-j6', '-l6'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[0.085566] (basic_robot) CommandEnded: {'returncode': 0}
+[0.099712] (-) TimerEvent: {}
+[0.108222] (basic_robot) JobProgress: {'identifier': 'basic_robot', 'progress': 'install'}
+[0.108393] (pcl_conversions) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.122413] (basic_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[0.133613] (basic_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.134122] (basic_robot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.134879] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/Materials.xacro\n'}
+[0.135169] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot.urdf.xacro\n'}
+[0.135423] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/basic_robot_core.xacro\n'}
+[0.135694] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/depth_camera.xacro\n'}
+[0.136076] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/gazebo_control.xacro\n'}
+[0.136313] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/inertial_macros.xacro\n'}
+[0.136494] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/Models/lidar.xacro\n'}
+[0.136805] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/launch_sim.py\n'}
+[0.137038] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/launch/rsp.launch.py\n'}
+[0.137517] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/Building/model.config\n'}
+[0.137832] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/Building/model.sdf\n'}
+[0.138421] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/barrels.world\n'}
+[0.138725] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/empty.world\n'}
+[0.138978] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/house.world\n'}
+[0.139209] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/my_world.world\n'}
+[0.139498] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/my_world2.world\n'}
+[0.139869] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/obstacles.world\n'}
+[0.140128] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/powerplant.world\n'}
+[0.140382] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/simple_env_1.world\n'}
+[0.140593] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/simple_env_2.world\n'}
+[0.140878] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/World/small_city.world\n'}
+[0.141139] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/config/view_basic_robot.rviz\n'}
+[0.141380] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/config/view_final_robot.rviz\n'}
+[0.141997] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/package_run_dependencies/basic_robot\n'}
+[0.142213] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/parent_prefix_path/basic_robot\n'}
+[0.142538] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.sh\n'}
+[0.142791] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/ament_prefix_path.dsv\n'}
+[0.143368] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.sh\n'}
+[0.143847] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/environment/path.dsv\n'}
+[0.144154] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.bash\n'}
+[0.144462] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.sh\n'}
+[0.144716] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.zsh\n'}
+[0.145041] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/local_setup.dsv\n'}
+[0.145289] (basic_robot) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.dsv\n'}
+[0.154837] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/ament_index/resource_index/packages/basic_robot\n'}
+[0.155141] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig.cmake\n'}
+[0.155434] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/cmake/basic_robotConfig-version.cmake\n'}
+[0.155755] (basic_robot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jonasvinol/Desktop/G1FinalProject/install/basic_robot/share/basic_robot/package.xml\n'}
+[0.161008] (basic_robot) CommandEnded: {'returncode': 0}
+[0.186641] (pcl_conversions) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.193226] (pcl_conversions) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199905] (-) TimerEvent: {}
+[0.223476] (basic_robot) JobEnded: {'identifier': 'basic_robot', 'rc': 0}
+[0.283905] (pcl_conversions) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.284193] (pcl_conversions) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300693] (-) TimerEvent: {}
+[0.362938] (pcl_conversions) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.385115] (pcl_conversions) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.385635] (pcl_conversions) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.389305] (pcl_conversions) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.400862] (-) TimerEvent: {}
+[0.496213] (pcl_conversions) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.497759] (pcl_conversions) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.501005] (-) TimerEvent: {}
+[0.589828] (pcl_conversions) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.601158] (-) TimerEvent: {}
+[0.612270] (pcl_conversions) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.613076] (pcl_conversions) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.615634] (pcl_conversions) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.645488] (pcl_conversions) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.645819] (pcl_conversions) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.701897] (-) TimerEvent: {}
+[0.802203] (-) TimerEvent: {}
+[0.890026] (pcl_conversions) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.902432] (-) TimerEvent: {}
+[0.924937] (pcl_conversions) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  \n'}
+[0.930035] (pcl_conversions) StdoutLine: {'line': b'-- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)\n'}
+[0.948555] (pcl_conversions) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.963710] (pcl_conversions) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[1.001267] (pcl_conversions) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.001427] (pcl_conversions) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[1.002543] (-) TimerEvent: {}
+[1.102820] (-) TimerEvent: {}
+[1.107598] (pcl_conversions) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.123199] (pcl_conversions) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[1.165502] (pcl_conversions) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.202965] (-) TimerEvent: {}
+[1.223622] (pcl_conversions) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.289264] (pcl_conversions) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.303139] (-) TimerEvent: {}
+[1.397485] (pcl_conversions) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.397702] (pcl_conversions) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.397813] (pcl_conversions) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.397914] (pcl_conversions) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.398011] (pcl_conversions) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.398107] (pcl_conversions) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.398202] (pcl_conversions) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.398297] (pcl_conversions) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.398391] (pcl_conversions) StdoutLine: {'line': b'\n'}
+[1.398938] (pcl_conversions) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.399052] (pcl_conversions) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.399151] (pcl_conversions) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.399283] (pcl_conversions) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.399381] (pcl_conversions) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.399498] (pcl_conversions) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.399594] (pcl_conversions) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.399690] (pcl_conversions) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.399827] (pcl_conversions) StdoutLine: {'line': b'\n'}
+[1.400195] (pcl_conversions) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.400385] (pcl_conversions) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.400499] (pcl_conversions) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.400598] (pcl_conversions) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.400693] (pcl_conversions) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.400786] (pcl_conversions) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.400879] (pcl_conversions) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.400973] (pcl_conversions) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.401068] (pcl_conversions) StdoutLine: {'line': b'\n'}
+[1.401161] (pcl_conversions) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.401254] (pcl_conversions) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.401362] (pcl_conversions) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.401467] (pcl_conversions) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.401561] (pcl_conversions) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.401655] (pcl_conversions) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.401748] (pcl_conversions) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.401855] (pcl_conversions) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.401949] (pcl_conversions) StdoutLine: {'line': b'\n'}
+[1.403284] (-) TimerEvent: {}
+[1.428382] (pcl_conversions) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[1.430741] (pcl_conversions) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.433170] (pcl_conversions) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.435567] (pcl_conversions) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.438503] (pcl_conversions) StdoutLine: {'line': b'-- Found pcl_msgs: 1.0.0 (/opt/ros/foxy/share/pcl_msgs/cmake)\n'}
+[1.474238] (pcl_conversions) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.483714] (pcl_conversions) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.503675] (-) TimerEvent: {}
+[1.577583] (pcl_conversions) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.603760] (-) TimerEvent: {}
+[1.617964] (pcl_conversions) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.703991] (-) TimerEvent: {}
+[1.735246] (pcl_conversions) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.804518] (-) TimerEvent: {}
+[1.904805] (-) TimerEvent: {}
+[2.005033] (-) TimerEvent: {}
+[2.105430] (-) TimerEvent: {}
+[2.205738] (-) TimerEvent: {}
+[2.288156] (pcl_conversions) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.305973] (-) TimerEvent: {}
+[2.362194] (pcl_conversions) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.364448] (pcl_conversions) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.365630] (pcl_conversions) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.406125] (-) TimerEvent: {}
+[2.468133] (pcl_conversions) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.468638] (pcl_conversions) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.506296] (-) TimerEvent: {}
+[2.561168] (pcl_conversions) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.561448] (pcl_conversions) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.606506] (-) TimerEvent: {}
+[2.636150] (pcl_conversions) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.636407] (pcl_conversions) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.706674] (-) TimerEvent: {}
+[2.727855] (pcl_conversions) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.728136] (pcl_conversions) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.806793] (-) TimerEvent: {}
+[2.907152] (-) TimerEvent: {}
+[2.987431] (pcl_conversions) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[2.990113] (pcl_conversions) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[2.994005] (pcl_conversions) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[3.007265] (-) TimerEvent: {}
+[3.078805] (pcl_conversions) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[3.107403] (-) TimerEvent: {}
+[3.175597] (pcl_conversions) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.207518] (-) TimerEvent: {}
+[3.219783] (pcl_conversions) StdoutLine: {'line': b'-- Generating done\n'}
+[3.223230] (pcl_conversions) StdoutLine: {'line': b'-- Build files have been written to: /home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions\n'}
+[3.236095] (pcl_conversions) CommandEnded: {'returncode': 0}
+[3.236830] (pcl_conversions) JobProgress: {'identifier': 'pcl_conversions', 'progress': 'build'}
+[3.238762] (pcl_conversions) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions', '--', '-j6', '-l6'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[3.284295] (pcl_conversions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[3.284573] (pcl_conversions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[3.303123] (pcl_conversions) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[3.307657] (-) TimerEvent: {}
+[3.308879] (pcl_conversions) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[3.407797] (-) TimerEvent: {}
+[3.508527] (-) TimerEvent: {}
+[3.608873] (-) TimerEvent: {}
+[3.709237] (-) TimerEvent: {}
+[3.809605] (-) TimerEvent: {}
+[3.910015] (-) TimerEvent: {}
+[4.010344] (-) TimerEvent: {}
+[4.110686] (-) TimerEvent: {}
+[4.186064] (pcl_conversions) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[4.210788] (-) TimerEvent: {}
+[4.218341] (pcl_conversions) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[4.310963] (-) TimerEvent: {}
+[4.411285] (-) TimerEvent: {}
+[4.511569] (-) TimerEvent: {}
+[4.611938] (-) TimerEvent: {}
+[4.712235] (-) TimerEvent: {}
+[4.812514] (-) TimerEvent: {}
+[4.912906] (-) TimerEvent: {}
+[5.013303] (-) TimerEvent: {}
+[5.113613] (-) TimerEvent: {}
+[5.214033] (-) TimerEvent: {}
+[5.314321] (-) TimerEvent: {}
+[5.414630] (-) TimerEvent: {}
+[5.514966] (-) TimerEvent: {}
+[5.615302] (-) TimerEvent: {}
+[5.715783] (-) TimerEvent: {}
+[5.816431] (-) TimerEvent: {}
+[5.916813] (-) TimerEvent: {}
+[6.017118] (-) TimerEvent: {}
+[6.117437] (-) TimerEvent: {}
+[6.217896] (-) TimerEvent: {}
+[6.318317] (-) TimerEvent: {}
+[6.418600] (-) TimerEvent: {}
+[6.518982] (-) TimerEvent: {}
+[6.619333] (-) TimerEvent: {}
+[6.719592] (-) TimerEvent: {}
+[6.819807] (-) TimerEvent: {}
+[6.920779] (-) TimerEvent: {}
+[7.021103] (-) TimerEvent: {}
+[7.121459] (-) TimerEvent: {}
+[7.200933] (pcl_conversions) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[7.221636] (-) TimerEvent: {}
+[7.271651] (pcl_conversions) StdoutLine: {'line': b'[ 66%] Built target gtest\n'}
+[7.283092] (pcl_conversions) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pcl_conversions-test\x1b[0m\n'}
+[7.321837] (-) TimerEvent: {}
+[7.405878] (pcl_conversions) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pcl_conversions-test.dir/test/test_pcl_conversions.cpp.o\x1b[0m\n'}
+[7.421993] (-) TimerEvent: {}
+[7.522465] (-) TimerEvent: {}
+[7.622797] (-) TimerEvent: {}
+[7.723102] (-) TimerEvent: {}
+[7.823462] (-) TimerEvent: {}
+[7.923788] (-) TimerEvent: {}
+[8.024088] (-) TimerEvent: {}
+[8.124424] (-) TimerEvent: {}
+[8.224846] (-) TimerEvent: {}
+[8.325166] (-) TimerEvent: {}
+[8.425556] (-) TimerEvent: {}
+[8.525841] (-) TimerEvent: {}
+[8.626158] (-) TimerEvent: {}
+[8.726506] (-) TimerEvent: {}
+[8.826765] (-) TimerEvent: {}
+[8.927090] (-) TimerEvent: {}
+[9.027381] (-) TimerEvent: {}
+[9.127703] (-) TimerEvent: {}
+[9.228046] (-) TimerEvent: {}
+[9.328367] (-) TimerEvent: {}
+[9.428612] (-) TimerEvent: {}
+[9.528935] (-) TimerEvent: {}
+[9.629353] (-) TimerEvent: {}
+[9.729618] (-) TimerEvent: {}
+[9.829915] (-) TimerEvent: {}
+[9.930248] (-) TimerEvent: {}
+[10.030518] (-) TimerEvent: {}
+[10.130812] (-) TimerEvent: {}
+[10.231129] (-) TimerEvent: {}
+[10.331473] (-) TimerEvent: {}
+[10.431834] (-) TimerEvent: {}
+[10.532091] (-) TimerEvent: {}
+[10.632381] (-) TimerEvent: {}
+[10.732708] (-) TimerEvent: {}
+[10.833071] (-) TimerEvent: {}
+[10.933395] (-) TimerEvent: {}
+[11.033739] (-) TimerEvent: {}
+[11.134078] (-) TimerEvent: {}
+[11.234375] (-) TimerEvent: {}
+[11.334671] (-) TimerEvent: {}
+[11.434955] (-) TimerEvent: {}
+[11.535286] (-) TimerEvent: {}
+[11.635611] (-) TimerEvent: {}
+[11.736698] (-) TimerEvent: {}
+[11.836998] (-) TimerEvent: {}
+[11.937483] (-) TimerEvent: {}
+[12.037927] (-) TimerEvent: {}
+[12.138260] (-) TimerEvent: {}
+[12.238743] (-) TimerEvent: {}
+[12.339030] (-) TimerEvent: {}
+[12.439350] (-) TimerEvent: {}
+[12.539707] (-) TimerEvent: {}
+[12.640060] (-) TimerEvent: {}
+[12.740346] (-) TimerEvent: {}
+[12.840651] (-) TimerEvent: {}
+[12.940973] (-) TimerEvent: {}
+[13.041326] (-) TimerEvent: {}
+[13.141638] (-) TimerEvent: {}
+[13.242003] (-) TimerEvent: {}
+[13.342361] (-) TimerEvent: {}
+[13.442721] (-) TimerEvent: {}
+[13.543038] (-) TimerEvent: {}
+[13.643399] (-) TimerEvent: {}
+[13.743720] (-) TimerEvent: {}
+[13.844064] (-) TimerEvent: {}
+[13.944400] (-) TimerEvent: {}
+[14.044708] (-) TimerEvent: {}
+[14.145036] (-) TimerEvent: {}
+[14.245332] (-) TimerEvent: {}
+[14.345658] (-) TimerEvent: {}
+[14.446005] (-) TimerEvent: {}
+[14.546347] (-) TimerEvent: {}
+[14.646683] (-) TimerEvent: {}
+[14.746962] (-) TimerEvent: {}
+[14.847562] (-) TimerEvent: {}
+[14.947967] (-) TimerEvent: {}
+[15.048270] (-) TimerEvent: {}
+[15.148622] (-) TimerEvent: {}
+[15.248988] (-) TimerEvent: {}
+[15.349355] (-) TimerEvent: {}
+[15.449856] (-) TimerEvent: {}
+[15.550188] (-) TimerEvent: {}
+[15.639293] (pcl_conversions) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pcl_conversions-test\x1b[0m\n'}
+[15.650377] (-) TimerEvent: {}
+[15.750744] (-) TimerEvent: {}
+[15.851060] (-) TimerEvent: {}
+[15.951458] (-) TimerEvent: {}
+[16.032759] (pcl_conversions) StdoutLine: {'line': b'[100%] Built target pcl_conversions-test\n'}
+[16.044045] (pcl_conversions) CommandEnded: {'returncode': 0}
+[16.051663] (-) TimerEvent: {}
+[16.073361] (pcl_conversions) JobProgress: {'identifier': 'pcl_conversions', 'progress': 'install'}
+[16.073572] (pcl_conversions) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_conversions'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[16.082089] (pcl_conversions) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.082795] (pcl_conversions) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.084259] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/include/pcl_conversions//pcl_conversions.h\n'}
+[16.092765] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/ament_index/resource_index/package_run_dependencies/pcl_conversions\n'}
+[16.101908] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/ament_index/resource_index/parent_prefix_path/pcl_conversions\n'}
+[16.110934] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/environment/ament_prefix_path.sh\n'}
+[16.119913] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/environment/ament_prefix_path.dsv\n'}
+[16.128808] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/environment/path.sh\n'}
+[16.137873] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/environment/path.dsv\n'}
+[16.146896] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/local_setup.bash\n'}
+[16.151788] (-) TimerEvent: {}
+[16.155818] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/local_setup.sh\n'}
+[16.165129] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/local_setup.zsh\n'}
+[16.174136] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/local_setup.dsv\n'}
+[16.185155] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/package.dsv\n'}
+[16.194596] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/ament_index/resource_index/packages/pcl_conversions\n'}
+[16.203728] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.212764] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.221953] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake\n'}
+[16.230920] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/cmake/pcl_conversionsConfig-version.cmake\n'}
+[16.240099] (pcl_conversions) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/package.xml\n'}
+[16.250810] (pcl_conversions) CommandEnded: {'returncode': 0}
+[16.254600] (-) TimerEvent: {}
+[16.311015] (pcl_conversions) JobEnded: {'identifier': 'pcl_conversions', 'rc': 0}
+[16.313800] (pcl_ros) JobStarted: {'identifier': 'pcl_ros'}
+[16.322211] (pcl_ros) JobProgress: {'identifier': 'pcl_ros', 'progress': 'cmake'}
+[16.330205] (pcl_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/jonasvinol/Desktop/G1FinalProject/src/perception_pcl/pcl_ros', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[16.354787] (-) TimerEvent: {}
+[16.411603] (pcl_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[16.454912] (-) TimerEvent: {}
+[16.479726] (pcl_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[16.487821] (pcl_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[16.555079] (-) TimerEvent: {}
+[16.562317] (pcl_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[16.563476] (pcl_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[16.652178] (pcl_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[16.655202] (-) TimerEvent: {}
+[16.673776] (pcl_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[16.674293] (pcl_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[16.677996] (pcl_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[16.755439] (-) TimerEvent: {}
+[16.770832] (pcl_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[16.771949] (pcl_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[16.855602] (-) TimerEvent: {}
+[16.862446] (pcl_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[16.886189] (pcl_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[16.887127] (pcl_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[16.911057] (pcl_ros) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[16.926907] (pcl_ros) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[16.955762] (-) TimerEvent: {}
+[16.964443] (pcl_ros) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[16.964693] (pcl_ros) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[17.056021] (-) TimerEvent: {}
+[17.094065] (pcl_ros) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[17.110236] (pcl_ros) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[17.156367] (-) TimerEvent: {}
+[17.157789] (pcl_ros) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[17.256546] (-) TimerEvent: {}
+[17.267478] (pcl_ros) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[17.267650] (pcl_ros) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[17.267800] (pcl_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[17.267902] (pcl_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[17.267998] (pcl_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[17.268092] (pcl_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[17.268215] (pcl_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[17.268310] (pcl_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[17.268404] (pcl_ros) StdoutLine: {'line': b'\n'}
+[17.268897] (pcl_ros) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[17.269010] (pcl_ros) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[17.269129] (pcl_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[17.269228] (pcl_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[17.269322] (pcl_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[17.269416] (pcl_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[17.269510] (pcl_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[17.269603] (pcl_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[17.269697] (pcl_ros) StdoutLine: {'line': b'\n'}
+[17.269884] (pcl_ros) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[17.269988] (pcl_ros) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[17.270185] (pcl_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[17.270282] (pcl_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[17.270376] (pcl_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[17.270469] (pcl_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[17.270563] (pcl_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[17.270656] (pcl_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[17.270750] (pcl_ros) StdoutLine: {'line': b'\n'}
+[17.270843] (pcl_ros) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[17.270936] (pcl_ros) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[17.271043] (pcl_ros) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[17.271149] (pcl_ros) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[17.271243] (pcl_ros) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[17.271336] (pcl_ros) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[17.271428] (pcl_ros) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[17.271521] (pcl_ros) StdoutLine: {'line': b'but not all the files it references.\n'}
+[17.271622] (pcl_ros) StdoutLine: {'line': b'\n'}
+[17.327157] (pcl_ros) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[17.343840] (pcl_ros) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[17.356713] (-) TimerEvent: {}
+[17.385603] (pcl_ros) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[17.445318] (pcl_ros) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[17.456846] (-) TimerEvent: {}
+[17.512174] (pcl_ros) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[17.540584] (pcl_ros) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[17.556988] (-) TimerEvent: {}
+[17.568319] (pcl_ros) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[17.568547] (pcl_ros) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[17.570601] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[17.573321] (pcl_ros) StdoutLine: {'line': b'-- Could NOT find PCL_CORE (missing: PCL_CORE_LIBRARY PCL_CORE_INCLUDE_DIR) \n'}
+[17.575373] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[17.578060] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[17.580636] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[17.581565] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[17.584130] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[17.587256] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[17.589908] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[17.592510] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[17.593624] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[17.596115] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[17.598740] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[17.601590] (pcl_ros) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[17.657151] (-) TimerEvent: {}
+[17.757506] (-) TimerEvent: {}
+[17.813234] (pcl_ros) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[17.857669] (-) TimerEvent: {}
+[17.878296] (pcl_ros) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[17.878553] (pcl_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[17.957865] (-) TimerEvent: {}
+[18.058172] (-) TimerEvent: {}
+[18.122276] (pcl_ros) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[18.157507] (pcl_ros) StdoutLine: {'line': b'-- Found pcl_conversions: 2.2.1 (/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions/share/pcl_conversions/cmake)\n'}
+[18.158291] (-) TimerEvent: {}
+[18.202715] (pcl_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[18.212459] (pcl_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[18.258486] (-) TimerEvent: {}
+[18.306419] (pcl_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[18.342988] (pcl_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[18.358682] (-) TimerEvent: {}
+[18.458932] (-) TimerEvent: {}
+[18.461791] (pcl_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[18.559109] (-) TimerEvent: {}
+[18.659419] (-) TimerEvent: {}
+[18.759786] (-) TimerEvent: {}
+[18.860242] (-) TimerEvent: {}
+[18.960620] (-) TimerEvent: {}
+[19.061374] (-) TimerEvent: {}
+[19.094621] (pcl_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[19.096923] (pcl_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[19.098127] (pcl_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[19.161545] (-) TimerEvent: {}
+[19.180672] (pcl_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[19.180958] (pcl_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[19.261696] (-) TimerEvent: {}
+[19.268183] (pcl_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[19.268546] (pcl_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[19.347599] (pcl_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[19.348012] (pcl_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[19.361861] (-) TimerEvent: {}
+[19.430560] (pcl_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[19.432104] (pcl_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[19.462025] (-) TimerEvent: {}
+[19.562295] (-) TimerEvent: {}
+[19.662621] (-) TimerEvent: {}
+[19.731760] (pcl_ros) StdoutLine: {'line': b'-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[19.750648] (pcl_ros) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[19.762803] (-) TimerEvent: {}
+[19.763778] (pcl_ros) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[19.765758] (pcl_ros) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[19.862924] (-) TimerEvent: {}
+[19.963291] (-) TimerEvent: {}
+[20.063615] (-) TimerEvent: {}
+[20.163943] (-) TimerEvent: {}
+[20.264259] (-) TimerEvent: {}
+[20.364635] (-) TimerEvent: {}
+[20.465101] (-) TimerEvent: {}
+[20.547920] (pcl_ros) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[20.565228] (-) TimerEvent: {}
+[20.661085] (pcl_ros) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[20.662580] (pcl_ros) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/jonasvinol/Desktop/G1FinalProject/src/perception_pcl/pcl_ros/include\n'}
+[20.662707] (pcl_ros) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[20.665390] (-) TimerEvent: {}
+[20.669576] (pcl_ros) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[20.669673] (pcl_ros) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[20.671068] (pcl_ros) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[20.673230] (pcl_ros) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[20.674641] (pcl_ros) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[20.681465] (pcl_ros) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[20.681574] (pcl_ros) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[20.682909] (pcl_ros) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[20.692143] (pcl_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.765558] (-) TimerEvent: {}
+[20.773845] (pcl_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[20.777611] (pcl_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros\n'}
+[20.791178] (pcl_ros) CommandEnded: {'returncode': 0}
+[20.793885] (pcl_ros) JobProgress: {'identifier': 'pcl_ros', 'progress': 'build'}
+[20.794108] (pcl_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros', '--', '-j6', '-l6'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[20.840758] (pcl_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pcl_ros_tf\x1b[0m\n'}
+[20.865728] (-) TimerEvent: {}
+[20.966180] (-) TimerEvent: {}
+[21.027380] (pcl_ros) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pcl_ros_tf.dir/src/transforms.cpp.o\x1b[0m\n'}
+[21.066317] (-) TimerEvent: {}
+[21.166785] (-) TimerEvent: {}
+[21.267176] (-) TimerEvent: {}
+[21.367512] (-) TimerEvent: {}
+[21.467813] (-) TimerEvent: {}
+[21.568468] (-) TimerEvent: {}
+[21.668865] (-) TimerEvent: {}
+[21.769221] (-) TimerEvent: {}
+[21.869532] (-) TimerEvent: {}
+[21.969893] (-) TimerEvent: {}
+[22.070209] (-) TimerEvent: {}
+[22.170576] (-) TimerEvent: {}
+[22.270955] (-) TimerEvent: {}
+[22.371305] (-) TimerEvent: {}
+[22.471619] (-) TimerEvent: {}
+[22.571957] (-) TimerEvent: {}
+[22.672276] (-) TimerEvent: {}
+[22.772574] (-) TimerEvent: {}
+[22.872900] (-) TimerEvent: {}
+[22.973221] (-) TimerEvent: {}
+[23.073528] (-) TimerEvent: {}
+[23.173856] (-) TimerEvent: {}
+[23.274178] (-) TimerEvent: {}
+[23.374519] (-) TimerEvent: {}
+[23.474943] (-) TimerEvent: {}
+[23.575293] (-) TimerEvent: {}
+[23.675584] (-) TimerEvent: {}
+[23.776170] (-) TimerEvent: {}
+[23.876539] (-) TimerEvent: {}
+[23.976854] (-) TimerEvent: {}
+[24.077172] (-) TimerEvent: {}
+[24.177449] (-) TimerEvent: {}
+[24.277746] (-) TimerEvent: {}
+[24.378047] (-) TimerEvent: {}
+[24.478402] (-) TimerEvent: {}
+[24.578755] (-) TimerEvent: {}
+[24.679106] (-) TimerEvent: {}
+[24.779441] (-) TimerEvent: {}
+[24.879802] (-) TimerEvent: {}
+[24.980141] (-) TimerEvent: {}
+[25.080493] (-) TimerEvent: {}
+[25.180778] (-) TimerEvent: {}
+[25.281073] (-) TimerEvent: {}
+[25.381323] (-) TimerEvent: {}
+[25.481631] (-) TimerEvent: {}
+[25.581975] (-) TimerEvent: {}
+[25.682374] (-) TimerEvent: {}
+[25.782675] (-) TimerEvent: {}
+[25.882967] (-) TimerEvent: {}
+[25.983258] (-) TimerEvent: {}
+[26.083544] (-) TimerEvent: {}
+[26.183943] (-) TimerEvent: {}
+[26.284639] (-) TimerEvent: {}
+[26.385086] (-) TimerEvent: {}
+[26.485461] (-) TimerEvent: {}
+[26.585781] (-) TimerEvent: {}
+[26.686153] (-) TimerEvent: {}
+[26.786619] (-) TimerEvent: {}
+[26.886990] (-) TimerEvent: {}
+[26.987373] (-) TimerEvent: {}
+[27.087647] (-) TimerEvent: {}
+[27.188532] (-) TimerEvent: {}
+[27.288840] (-) TimerEvent: {}
+[27.389144] (-) TimerEvent: {}
+[27.489383] (-) TimerEvent: {}
+[27.589718] (-) TimerEvent: {}
+[27.690320] (-) TimerEvent: {}
+[27.790613] (-) TimerEvent: {}
+[27.890901] (-) TimerEvent: {}
+[27.991555] (-) TimerEvent: {}
+[28.092212] (-) TimerEvent: {}
+[28.192637] (-) TimerEvent: {}
+[28.293409] (-) TimerEvent: {}
+[28.393828] (-) TimerEvent: {}
+[28.494175] (-) TimerEvent: {}
+[28.594509] (-) TimerEvent: {}
+[28.694835] (-) TimerEvent: {}
+[28.795158] (-) TimerEvent: {}
+[28.895578] (-) TimerEvent: {}
+[28.996142] (-) TimerEvent: {}
+[29.096544] (-) TimerEvent: {}
+[29.196865] (-) TimerEvent: {}
+[29.297195] (-) TimerEvent: {}
+[29.397511] (-) TimerEvent: {}
+[29.497813] (-) TimerEvent: {}
+[29.598123] (-) TimerEvent: {}
+[29.698466] (-) TimerEvent: {}
+[29.798773] (-) TimerEvent: {}
+[29.899143] (-) TimerEvent: {}
+[29.999492] (-) TimerEvent: {}
+[30.099765] (-) TimerEvent: {}
+[30.200199] (-) TimerEvent: {}
+[30.301120] (-) TimerEvent: {}
+[30.401373] (-) TimerEvent: {}
+[30.501883] (-) TimerEvent: {}
+[30.602390] (-) TimerEvent: {}
+[30.702945] (-) TimerEvent: {}
+[30.803484] (-) TimerEvent: {}
+[30.904013] (-) TimerEvent: {}
+[31.005145] (-) TimerEvent: {}
+[31.105780] (-) TimerEvent: {}
+[31.206394] (-) TimerEvent: {}
+[31.306939] (-) TimerEvent: {}
+[31.408399] (-) TimerEvent: {}
+[31.508917] (-) TimerEvent: {}
+[31.610425] (-) TimerEvent: {}
+[31.710997] (-) TimerEvent: {}
+[31.811494] (-) TimerEvent: {}
+[31.912012] (-) TimerEvent: {}
+[32.013529] (-) TimerEvent: {}
+[32.114062] (-) TimerEvent: {}
+[32.214577] (-) TimerEvent: {}
+[32.315165] (-) TimerEvent: {}
+[32.415731] (-) TimerEvent: {}
+[32.516267] (-) TimerEvent: {}
+[32.616967] (-) TimerEvent: {}
+[32.717296] (-) TimerEvent: {}
+[32.817833] (-) TimerEvent: {}
+[32.918396] (-) TimerEvent: {}
+[33.018924] (-) TimerEvent: {}
+[33.120080] (-) TimerEvent: {}
+[33.221563] (-) TimerEvent: {}
+[33.322647] (-) TimerEvent: {}
+[33.423159] (-) TimerEvent: {}
+[33.523745] (-) TimerEvent: {}
+[33.625469] (-) TimerEvent: {}
+[33.725739] (-) TimerEvent: {}
+[33.826294] (-) TimerEvent: {}
+[33.927875] (-) TimerEvent: {}
+[34.028347] (-) TimerEvent: {}
+[34.129864] (-) TimerEvent: {}
+[34.231429] (-) TimerEvent: {}
+[34.332864] (-) TimerEvent: {}
+[34.433409] (-) TimerEvent: {}
+[34.534021] (-) TimerEvent: {}
+[34.634554] (-) TimerEvent: {}
+[34.735044] (-) TimerEvent: {}
+[34.836118] (-) TimerEvent: {}
+[34.936630] (-) TimerEvent: {}
+[35.037161] (-) TimerEvent: {}
+[35.137741] (-) TimerEvent: {}
+[35.238261] (-) TimerEvent: {}
+[35.338932] (-) TimerEvent: {}
+[35.440309] (-) TimerEvent: {}
+[35.541290] (-) TimerEvent: {}
+[35.641649] (-) TimerEvent: {}
+[35.741988] (-) TimerEvent: {}
+[35.818931] (pcl_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libpcl_ros_tf.so\x1b[0m\n'}
+[35.842444] (-) TimerEvent: {}
+[35.942812] (-) TimerEvent: {}
+[36.044586] (-) TimerEvent: {}
+[36.145458] (-) TimerEvent: {}
+[36.246582] (-) TimerEvent: {}
+[36.347088] (-) TimerEvent: {}
+[36.447640] (-) TimerEvent: {}
+[36.548165] (-) TimerEvent: {}
+[36.648695] (-) TimerEvent: {}
+[36.749168] (-) TimerEvent: {}
+[36.769374] (pcl_ros) StdoutLine: {'line': b'[100%] Built target pcl_ros_tf\n'}
+[36.781653] (pcl_ros) CommandEnded: {'returncode': 0}
+[36.811388] (pcl_ros) JobProgress: {'identifier': 'pcl_ros', 'progress': 'install'}
+[36.811660] (pcl_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/pcl_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[36.820153] (pcl_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[36.821026] (pcl_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[36.822275] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/boundary.hpp\n'}
+[36.831299] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/feature.hpp\n'}
+[36.840577] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/fpfh.hpp\n'}
+[36.849265] (-) TimerEvent: {}
+[36.849695] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/fpfh_omp.hpp\n'}
+[36.858662] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/moment_invariants.hpp\n'}
+[36.868293] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/normal_3d.hpp\n'}
+[36.877877] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/normal_3d_omp.hpp\n'}
+[36.888603] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/normal_3d_tbb.hpp\n'}
+[36.897835] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/pfh.hpp\n'}
+[36.907322] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/principal_curvatures.hpp\n'}
+[36.916503] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/shot.hpp\n'}
+[36.925521] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/shot_omp.hpp\n'}
+[36.934537] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/features/vfh.hpp\n'}
+[36.943561] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/crop_box.hpp\n'}
+[36.949486] (-) TimerEvent: {}
+[36.952724] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/extract_indices.hpp\n'}
+[36.962167] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/filter.hpp\n'}
+[36.971449] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/passthrough.hpp\n'}
+[36.981101] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/project_inliers.hpp\n'}
+[36.990883] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/radius_outlier_removal.hpp\n'}
+[37.000340] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/statistical_outlier_removal.hpp\n'}
+[37.009799] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/filters/voxel_grid.hpp\n'}
+[37.019212] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/impl/transforms.hpp\n'}
+[37.030301] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/io/bag_io.hpp\n'}
+[37.039651] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/io/concatenate_data.hpp\n'}
+[37.048652] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/io/concatenate_fields.hpp\n'}
+[37.050025] (-) TimerEvent: {}
+[37.057812] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/io/pcd_io.hpp\n'}
+[37.066985] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/pcl_nodelet.hpp\n'}
+[37.075932] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/point_cloud.hpp\n'}
+[37.086069] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/publisher.hpp\n'}
+[37.095283] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/segmentation/extract_clusters.hpp\n'}
+[37.104413] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/segmentation/extract_polygonal_prism_data.hpp\n'}
+[37.113335] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/segmentation/sac_segmentation.hpp\n'}
+[37.122591] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/segmentation/segment_differences.hpp\n'}
+[37.131621] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/surface/convex_hull.hpp\n'}
+[37.140595] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/surface/moving_least_squares.hpp\n'}
+[37.149387] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/include/pcl_ros/transforms.hpp\n'}
+[37.150109] (-) TimerEvent: {}
+[37.159132] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_features.xml\n'}
+[37.168549] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_filters.xml\n'}
+[37.177568] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_io.xml\n'}
+[37.186974] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_segmentation.xml\n'}
+[37.196326] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_surface.xml\n'}
+[37.205920] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/data/.gitignore\n'}
+[37.215194] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features/sample_normal_3d.launch\n'}
+[37.224841] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/statistical_outlier_removal.rviz\n'}
+[37.233888] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/voxel_grid.rviz\n'}
+[37.243063] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_statistical_outlier_removal.launch\n'}
+[37.252097] (-) TimerEvent: {}
+[37.252556] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_voxel_grid.launch\n'}
+[37.261635] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io/sample_concatenate_data.launch\n'}
+[37.270717] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation/sample_extract_clusters.launch\n'}
+[37.279923] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface/sample_convex_hull.launch\n'}
+[37.289826] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/environment/library_path.sh\n'}
+[37.298997] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/environment/library_path.dsv\n'}
+[37.308438] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/ament_index/resource_index/package_run_dependencies/pcl_ros\n'}
+[37.317651] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/ament_index/resource_index/parent_prefix_path/pcl_ros\n'}
+[37.326914] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.sh\n'}
+[37.336043] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.dsv\n'}
+[37.345354] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/environment/path.sh\n'}
+[37.352727] (-) TimerEvent: {}
+[37.354813] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/environment/path.dsv\n'}
+[37.363985] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/local_setup.bash\n'}
+[37.373020] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/local_setup.sh\n'}
+[37.382657] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/local_setup.zsh\n'}
+[37.392309] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/local_setup.dsv\n'}
+[37.401875] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/package.dsv\n'}
+[37.412014] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/ament_index/resource_index/packages/pcl_ros\n'}
+[37.421566] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[37.430629] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[37.440028] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[37.449343] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[37.453083] (-) TimerEvent: {}
+[37.458560] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig.cmake\n'}
+[37.467479] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig-version.cmake\n'}
+[37.476412] (pcl_ros) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/package.xml\n'}
+[37.487108] (pcl_ros) StdoutLine: {'line': b'-- Installing: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/lib/libpcl_ros_tf.so\n'}
+[37.489238] (pcl_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/lib/libpcl_ros_tf.so" to ""\n'}
+[37.489451] (pcl_ros) StdoutLine: {'line': b'-- Installing: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport.cmake\n'}
+[37.489649] (pcl_ros) StdoutLine: {'line': b'-- Installing: /home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport-noconfig.cmake\n'}
+[37.495360] (pcl_ros) CommandEnded: {'returncode': 0}
+[37.553723] (-) TimerEvent: {}
+[37.558588] (pcl_ros) JobEnded: {'identifier': 'pcl_ros', 'rc': 0}
+[37.559594] (perception_pcl) JobStarted: {'identifier': 'perception_pcl'}
+[37.573134] (perception_pcl) JobProgress: {'identifier': 'perception_pcl', 'progress': 'cmake'}
+[37.573383] (perception_pcl) Command: {'cmd': ['/usr/bin/cmake', '/home/jonasvinol/Desktop/G1FinalProject/src/perception_pcl/perception_pcl', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros:/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros:/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[37.645038] (perception_pcl) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[37.655150] (-) TimerEvent: {}
+[37.729080] (perception_pcl) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[37.735852] (perception_pcl) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[37.755357] (-) TimerEvent: {}
+[37.839830] (perception_pcl) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[37.839987] (perception_pcl) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[37.856381] (-) TimerEvent: {}
+[37.932331] (perception_pcl) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[37.955148] (perception_pcl) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[37.955698] (perception_pcl) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[37.957305] (-) TimerEvent: {}
+[37.959684] (perception_pcl) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[38.053419] (perception_pcl) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[38.054958] (perception_pcl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[38.057443] (-) TimerEvent: {}
+[38.150471] (perception_pcl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[38.157971] (-) TimerEvent: {}
+[38.173610] (perception_pcl) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[38.174550] (perception_pcl) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[38.177448] (perception_pcl) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[38.208151] (perception_pcl) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[38.208443] (perception_pcl) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[38.258147] (-) TimerEvent: {}
+[38.358394] (-) TimerEvent: {}
+[38.454614] (perception_pcl) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[38.458575] (-) TimerEvent: {}
+[38.559089] (-) TimerEvent: {}
+[38.566402] (perception_pcl) StdoutLine: {'line': b'-- Configuring done\n'}
+[38.569012] (perception_pcl) StdoutLine: {'line': b'-- Generating done\n'}
+[38.570509] (perception_pcl) StdoutLine: {'line': b'-- Build files have been written to: /home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl\n'}
+[38.574062] (perception_pcl) CommandEnded: {'returncode': 0}
+[38.574625] (perception_pcl) JobProgress: {'identifier': 'perception_pcl', 'progress': 'build'}
+[38.576356] (perception_pcl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl', '--', '-j6', '-l6'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros:/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros:/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[38.618615] (perception_pcl) CommandEnded: {'returncode': 0}
+[38.643507] (perception_pcl) JobProgress: {'identifier': 'perception_pcl', 'progress': 'install'}
+[38.643723] (perception_pcl) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl'], 'cwd': '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jonasvinol'), ('SSH_AGENT_PID', '1428'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jonasvinol'), ('OLDPWD', '/home/jonasvinol/Desktop/G1FinalProject/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jonasvinol'), ('JOURNAL_STREAM', '8:40147'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jonasvinol'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1490,unix/Ubuntu:/tmp/.ICE-unix/1490'), ('INVOCATION_ID', 'cb26cc7958954ff894b641426c8c1550'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7db4993a_7fff_4224_8e2e_3b2aae2d3db8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.189'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros:/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jonasvinol/Desktop/G1FinalProject/build/perception_pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jonasvinol/Desktop/G1FinalProject/install/pcl_ros:/home/jonasvinol/Desktop/G1FinalProject/install/pcl_conversions:/home/jonasvinol/Desktop/G1FinalProject/install/basic_robot:/opt/ros/foxy')]), 'shell': False}
+[38.652312] (perception_pcl) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.652681] (perception_pcl) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[38.652975] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/ament_index/resource_index/package_run_dependencies/perception_pcl\n'}
+[38.659623] (-) TimerEvent: {}
+[38.662396] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/ament_index/resource_index/parent_prefix_path/perception_pcl\n'}
+[38.672123] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/environment/ament_prefix_path.sh\n'}
+[38.681296] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/environment/ament_prefix_path.dsv\n'}
+[38.690756] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/environment/path.sh\n'}
+[38.701239] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/environment/path.dsv\n'}
+[38.710769] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/local_setup.bash\n'}
+[38.720348] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/local_setup.sh\n'}
+[38.729646] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/local_setup.zsh\n'}
+[38.739627] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/local_setup.dsv\n'}
+[38.749184] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/package.dsv\n'}
+[38.759250] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/ament_index/resource_index/packages/perception_pcl\n'}
+[38.759757] (-) TimerEvent: {}
+[38.768739] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/cmake/perception_pclConfig.cmake\n'}
+[38.777970] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/cmake/perception_pclConfig-version.cmake\n'}
+[38.787973] (perception_pcl) StdoutLine: {'line': b'-- Symlinking: /home/jonasvinol/Desktop/G1FinalProject/install/perception_pcl/share/perception_pcl/package.xml\n'}
+[38.804172] (perception_pcl) CommandEnded: {'returncode': 0}
+[38.857653] (perception_pcl) JobEnded: {'identifier': 'perception_pcl', 'rc': 0}
+[38.858187] (-) EventReactorShutdown: {}
