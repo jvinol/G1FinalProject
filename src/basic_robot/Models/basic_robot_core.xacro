@@ -5,14 +5,14 @@
     <xacro:include filename="inertial_macros.xacro"/>
 
     <!--Base Link-->
-    <link name="base_link">
+    <link name="base_footprint">
         
     </link>
 
 <!-- CHASSIS LINK -->
 
     <joint name="chassis_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="base_footprint"/>
         <child link="chassis"/>
         <!--origin is on the wheel drive-->
         <origin xyz="-0.1 0 0"/>
@@ -47,7 +47,7 @@
     <!-- LEFT WHEEL LINK -->
 
     <joint name="left_wheel_joint" type="continuous">
-        <parent link="base_link"/>
+        <parent link="base_footprint"/>
         <child link="left_wheel"/>
         <origin xyz="0 0.175 0" rpy="-${pi/2} 0 0" />
         <axis xyz="0 0 1"/>
@@ -78,7 +78,7 @@
     <!-- RIGHT WHEEL LINK -->
 
     <joint name="right_wheel_joint" type="continuous">
-        <parent link="base_link"/>
+        <parent link="base_footprint"/>
         <child link="right_wheel"/>
         <origin xyz="0 -0.175 0" rpy="${pi/2} 0 0" />
         <axis xyz="0 0 -1"/>
