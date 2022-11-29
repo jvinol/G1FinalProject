@@ -1,1 +1,3 @@
-/home/jonasvinol/Desktop/G1FinalProject/build/basic_robot/ament_cmake_environment_hooks/local_setup.dsv
+source;share/basic_robot/environment/ament_prefix_path.sh
+source;share/basic_robot/environment/path.sh
+source;share/basic_robot/environment/pythonpath.sh
