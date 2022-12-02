@@ -19,6 +19,8 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 
 # Files in this Directory
 1. PCD Python Scripts: 
+    - point_cloud_sample_ply_pcd_convert.py - Used to convert a .ply file to a .pcd
+    - point_cloud_sample_pcd.py - Used to visualize the .pcd data
 
 2. README Images: Contains the images used in the Readme.md file
 
