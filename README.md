@@ -32,60 +32,90 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
     -  package.xml: This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other packages.
 
 ## Setup
-This project utilized an Oracle Virtual Machine running Ubuntu 20.04 Focal Fossa and ROS2 Foxy Fitzroy.
+ - This project utilized an Oracle Virtual Machine running Ubuntu 20.04 Focal Fossa and ROS2 Foxy Fitzroy.
 
  - To install Ubuntu 20.04 on a Virtual Machine, follow the instructions <ins>[here](https://linuxhint.com/install_ubuntu_virtualbox_2004/)</ins>
+ 
  - To install ROS2 Foxy, follow the instructions <ins>[here](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)</ins>
 
-In addition this project utilizes the slam_toolbox to give the user an option to map their environment in 2D and the teleop_twist_keyboard to control the robot.
+ - Install the colcon build tool
 
-To install the slam_toolbox, type the following into the command line:
+    <code>sudo apt install python3-colcon-common-extensions</code>
 
-<code>sudo apt install ros-foxy-slam-toolbox</code>
+ - In addition this project utilizes the slam_toolbox to give the user an option to map their environment in 2D and the teleop_twist_keyboard to control the robot. To install the slam_toolbox, type the following into the command line:
 
-To run the slam_toolbox, the following command can be used:
+    <code>sudo apt install ros-foxy-slam-toolbox</code>
 
-<code>ros2 launch slam_toolbox online_async_launch.py</code>
+ - To run the slam_toolbox, the following command can be used:
 
-To install teleop_twist keyboard, type the following in the command line:
+    <code>ros2 launch slam_toolbox online_async_launch.py</code>
 
-<code>sudo apt-get install ros-foxy-teleop-twist-keyboard</code>
+ - To install teleop_twist keyboard, type the following in the command line:
 
-To run the teleop_twist_keyboard, the following command can be used:
+    <code>sudo apt-get install ros-foxy-teleop-twist-keyboard</code>
 
-<code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
+ - To run the teleop_twist_keyboard, the following command can be used:
 
-In addition Gazebo is required to run the simulation. For this project Gazebo 11 was used. To install Gazebo, type the following in the command line:
+    <code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
 
-<code>curl -sSL http://get.gazebosim.org | sh</code>
+ - In addition Gazebo is required to run the simulation. For this project Gazebo 11 was used. To install Gazebo, type the following in the command line:
 
-Ensure that git is installed by using the following command:
+    <code>curl -sSL http://get.gazebosim.org | sh</code>
 
-<code>sudo apt install git</code>
+    <code>sudo apt install ros-foxy-gazebo-ros-pkgs</code>
 
-Lastly: 
+ - Ensure that git is installed by using the following command:
 
-<code>sudo apt update && sudo apt upgrade</code>
+    <code>sudo apt install git</code>
+
+ - Install a python package called xacro
+
+    <code>sudo apt install python3-pip</code>
+
+    <code>pip install xacro</code>
+
+ - Lastly: 
+
+    <code>sudo apt update && sudo apt upgrade</code>
 
 ## How to run the project
 
-1. Make a ROS workspace on the Desktop
-<code>mkdir Desktop/ros_ws</code>
+1. Change currect directory to the desktop
+<code>cd ~/Desktop</code>
 
-2. Clone this github repository into the workspace
+2. Clone this github repository on to the desktop. This will create a workspace G1FinalProject on the desktop. Change directories into the newly created workspace.
 
-    <code>cd Desktop/ros_ws</code>
+    <code>git clone https://github.com/jvinol/G1FinalProject</code>
+    
+    <code>cd ~/Desktop/G1FinalProject</code>
 
-    <code>github clone https://github.com/jvinol/G1FinalProject/blob/eea6a81ee60bda2e5b3a78565dbd049f8912e518/README.md </code>
-
-3. Source the ROS2 environment
-
+3. Source the ROS2 environment (This will need to be done everytime a new terminal is opened)
+    
     <code>source /opt/ros/foxy/setup.bash</code>
 
-    Alternatively, add the sourcing script to the .bashrc folder so that it runs everytime a new console is intialized
+    Alternatively, add the sourcing script to the .bashrc folder so that it runs everytime a new console is intialized. Remember to source the bashrc file in the current terminal once the sourcing script has been added.
     
     <code>echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc</code>
     
-4. 
+    <code> source ~/.bashrc</code>  
+    
+4. In the root of the workspace (Desktop/G1FinalProject) build the workspace using colcon
+    
+    <code>colcon build</code>
+    
+5. In a new terminal, source the workspace (do not forget to source the ROS2 environment first.
+    <code>. install/setup.bash</code>
+    
+6. Run the launch program to launch gazebo, robot state publisher and spawn the robot. The world can be changed by changing the path specified in world:=./src/basic_robot/World/obstacles.world.
+
+    <code>ros2 launch basic_robot launch_sim.py world:=./src/basic_robot/World/obstacles.world</code>
+
+    We are currently using the obstacles.world, however other worlds are present in the World directory under the basic_robot directory in src directory. Example worlds can be found <ins>[here](https://github.com/chaolmu/gazebo_models_worlds_collection.git)</ins> and saved into the Worlds directory as well.
+    
+7. In a new command line terminal, run the teleop keyboard to control the robot in the gazebo environment. You can use the key inputs displayed to control the robot
+
+    <code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
+    
+8. 
 
 
