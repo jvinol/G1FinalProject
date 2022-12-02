@@ -110,6 +110,7 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
     <code>colcon build</code>
     
 5. In a new terminal, source the workspace (do not forget to source the ROS2 environment first.
+
     <code>. install/setup.bash</code>
     
 6. Run the launch program to launch gazebo, robot state publisher and spawn the robot. The world can be changed by changing the path specified in world:=./src/basic_robot/World/obstacles.world.
