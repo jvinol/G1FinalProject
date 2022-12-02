@@ -135,6 +135,13 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 When the view_final_robot.rviz configuration is first run, it is in map mode and if you move the robot around, you should see the environment being mapped. However, what we are interested in is the 3D visualization. 
 To view the 3D visualization of the world, in the display panel to the left, uncheck the box next to the *Map* display option and check the box next to the pointcloud2 display.
 
+![](https://github.com/jvinol/G1FinalProject/blob/f3763bca5078e6f86439102730e6d4e3f28c7d45/README%20Images/Gazebo%20Image.PNG)
+**Figure:** An image of the robot facing forward in the simulated world
+
+
+![](https://github.com/jvinol/G1FinalProject/blob/f3763bca5078e6f86439102730e6d4e3f28c7d45/README%20Images/RViz%20Image.PNG)
+**Figure:** An Rviz visualization of the above world
+
 ## Saving PointCloud data
 
 Our original goal was to be able to save the pointcloud data and visualize it using python. However, we had issues saving the data.A script attempting to parse the data can be found in the /src/basic_robot/basic_robot directory. However, this script gave a RTPS_Transport_SHM Error error which we were unable to resolve. To get around this, we found sample data online <ins>[here](http://redwood-data.org/indoor_lidar_rgbd/download.html)</ins> and used it to run our python scripts.
