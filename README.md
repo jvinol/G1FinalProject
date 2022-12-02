@@ -17,6 +17,20 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 
 **Figure:** Point cloud visualization of a museum room <ins>[Source](https://help.sketchup.com/en/scan-essentials-sketchup/sample-point-cloud-data)</ins>
 
+# Files in this Directory
+1. PCD Python Scripts: 
+
+2. README Images: Contains the images used in the Readme.md file
+
+3. src/basic robot: The directory containing all the files necessary to run the program: It contains the following directories:
+    - Models: Contains the xacro files necesssary to simulate a robot in gazebo
+    - World: Contains multiple .world files necessary to simulate the environment in gazebo. For this demonstration, we will be making use of the obstacles.world environment
+    - basic_robot/read_points.py: The python script written in an attempt to parse the pointcloud2 data being transmitted through the /camera/points topic. (**Note:** We were unable to get this to work due to first a configuration error and then a RTPS_Transport_SHM Error which we were unable to solve)
+    -  config: Contains the configuration files to intialize RViz so that the display setup is already setup to view the simulated ray data being transmitted due to the lidar, the map being generated due to the slam_toolbox and the pointcloud visualization due to the data being transmitted by the depth camera.
+    -  launch: Contains the launch files to easily launch the nodes for Gazebo, robot_state_publisher and initialize robot in the gazebo environment.
+    -  CMakeLists.txt: Contains a list of directions describing the project's source files and target.
+    -  package.xml: This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other packages.
+
 ## Setup
 This project utilized an Oracle Virtual Machine running Ubuntu 20.04 Focal Fossa and ROS2 Foxy Fitzroy.
 
