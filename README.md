@@ -149,8 +149,11 @@ Our original goal was to be able to save the pointcloud data and visualize it us
 
 4. Use point_cloud_sample_pcd.py to save the data
 
+A video example of the Open3D visualization can be seen in our presentation found <ins>[here](https://docs.google.com/presentation/d/1lRZsxsvUOAIYw7n4Ee_mOIopluhwSt4a05aiQCqFNEw/edit#slide=id.g1a41337ac68_0_108)</ins> in slide 15.
+
 ## Known Errors
 1. Script to save pointcloud data as a pcd file does not work
+
 2. RViz2 sometimes shows that the reference frame is invalid. In order to solve this, close all terminals, launch RViz2 first, then launch the basic_robot launch_sim.py, teleop keyboard and slam_toolbox before choosing the RViz2 configuration
 
 
