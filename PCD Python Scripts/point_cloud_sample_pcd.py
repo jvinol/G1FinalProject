@@ -4,7 +4,7 @@ import numpy as np
 import open3d as o3d
 import pyvista as pv
 
-pcd = o3d.io.read_point_cloud('apartment.pcd') # Change this filename if using a different pcd file
+pcd = o3d.io.read_point_cloud('apartment.pcd') # Change this filename to the filename used to save the data obtained from point_cloud_sample_ply_pcd_convert.py
 points_list = np.asarray(pcd.points)  
 print("output array from input list : ", points_list)
 print("Number of points : ", len(points_list))
