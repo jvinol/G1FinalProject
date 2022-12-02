@@ -67,4 +67,25 @@ Lastly:
 
 <code>sudo apt update && sudo apt upgrade</code>
 
+## How to run the project
+
+1. Make a ROS workspace on the Desktop
+<code>mkdir Desktop/ros_ws</code>
+
+2. Clone this github repository into the workspace
+
+    <code>cd Desktop/ros_ws</code>
+
+    <code>github clone https://github.com/jvinol/G1FinalProject/blob/eea6a81ee60bda2e5b3a78565dbd049f8912e518/README.md </code>
+
+3. Source the ROS2 environment
+
+    <code>source /opt/ros/foxy/setup.bash</code>
+
+    Alternatively, add the sourcing script to the .bashrc folder so that it runs everytime a new console is intialized
+    
+    <code>echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc</code>
+    
+4. 
+
 
