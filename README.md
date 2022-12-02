@@ -21,7 +21,7 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 This project utilized an Oracle Virtual Machine running Ubuntu 20.04 Focal Fossa and ROS2 Foxy Fitzroy.
 
  - To install Ubuntu 20.04 on a Virtual Machine, follow the instructions <ins>[here](https://linuxhint.com/install_ubuntu_virtualbox_2004/)</ins>
- - To install ROS2 Foxy, follow the instructions <ins>[here](https://docs.ros.org/en/foxy/Installation/Alternatives/Ubuntu-Development-Setup.html)</ins>
+ - To install ROS2 Foxy, follow the instructions <ins>[here](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)</ins>
 
 In addition this project utilizes the slam_toolbox to give the user an option to map their environment in 2D and the teleop_twist_keyboard to control the robot.
 
