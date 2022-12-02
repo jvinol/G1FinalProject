@@ -8,7 +8,7 @@ To map an environment using a depth camera and then visualize the entire environ
 ## Reasoning
 There are multiple ways to map and visualize an environment in 2d that are available to users using ROS. The most common being using a lidar sensor and the Nav2 toolbox to map the environment and then RViz to view it. However, while there are ways to visualize the environment in 3D through the use of either 3D Lidar or Depth cameras, there are not too many easy solutions to visualize a completed 3d map due to how computationally heavy the data can be. Some of the available solutions involve using octomap (documentation can be found <ins>[here](http://octomap.github.io/)</ins>
 
-Our project proposes utilizing the Open3D package available in python to map and visualize the 3D environment. You can read more about the package <ins>[here][(https://docs.pyvista.org/)](http://www.open3d.org/docs/release/index.html)</ins>
+Our project proposes utilizing the Open3D package available in python to map and visualize the 3D environment. You can read more about the package <ins>[here](http://www.open3d.org/docs/release/index.html)</ins>
 
 ## Background
 The data being mapped is known as a point cloud. A point cloud is a set of discrete data points in space, each having their own x, y, z coordinates as well as other parameters such as the rgb color and the intensity. Point cloud data is usually stored in a .pcd file containing a header describing the data followed by the data
