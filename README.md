@@ -62,7 +62,7 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 
     <code>sudo apt install git</code>
 
- - Install a python package called xacro
+ - Install a python package called xacro (Needed to build the urdf model in gazebo)
 
     <code>sudo apt install python3-pip</code>
 
