@@ -144,7 +144,9 @@ To view the 3D visualization of the world, in the display panel to the left, unc
 
 ## Saving PointCloud data
 
-Our original goal was to be able to save the pointcloud data and visualize it using python. However, we had issues saving the data.A script attempting to parse the data can be found in the /src/basic_robot/basic_robot directory. However, this script gave a RTPS_Transport_SHM Error error which we were unable to resolve. To get around this, we found sample data online <ins>[here](http://redwood-data.org/indoor_lidar_rgbd/download.html)</ins> and used it to run our python scripts.
+Our original goal was to be able to save the pointcloud data and visualize the entire world using python. However, we had issues saving the data. A script attempting to parse the data can be found in the /src/basic_robot/basic_robot directory. However, this script gave a RTPS_Transport_SHM Error error which we were unable to resolve. 
+
+To get around this, we found sample data online <ins>[here](http://redwood-data.org/indoor_lidar_rgbd/download.html)</ins> and used it to run our python scripts.
 
 ## Running the Python scripts
 
@@ -152,9 +154,9 @@ Our original goal was to be able to save the pointcloud data and visualize it us
 
 2. Extract the file and place it inside the /PCD Python Scripts directory. 
 
-3. Use the point_cloud_sample_ply_pcd_convert.py file to convert the ply data obtained on the above website into a pcd dataset.
+3. Use the point_cloud_sample_ply_pcd_convert.py file to convert the ply data obtained on the above website into a pcd dataset. Do not forget to change the data filename as well as the filename to where the converted data will be saved
 
-4. Use point_cloud_sample_pcd.py to save the data
+4. Use point_cloud_sample_pcd.py to view the environment. Change the filename to match that set in the above script
 
 A video example of the Open3D visualization can be seen in our presentation found <ins>[here](https://docs.google.com/presentation/d/1lRZsxsvUOAIYw7n4Ee_mOIopluhwSt4a05aiQCqFNEw/edit#slide=id.g1a41337ac68_0_108)</ins> in slide 15.
 
