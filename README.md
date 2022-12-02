@@ -133,7 +133,7 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 ## What do we see?
 
 When the view_final_robot.rviz configuration is first run, it is in map mode and if you move the robot around, you should see the environment being mapped. However, what we are interested in is the 3D visualization. 
-To view the 3D visualization of the world, in the display panel to the left, uncheck the box next to the *Map* display option and check the box next to the pointcloud2 display.
+To view the 3D visualization of the world, in the display panel to the left, uncheck the box next to the *Map* display option and check the box next to the *pointcloud2* display.
 
 ![](https://github.com/jvinol/G1FinalProject/blob/f3763bca5078e6f86439102730e6d4e3f28c7d45/README%20Images/Gazebo%20Image.PNG)
 **Figure:** An image of the robot facing forward in the simulated world
@@ -160,10 +160,11 @@ To get around this, we found sample data online <ins>[here](http://redwood-data.
 
 A video example of the Open3D visualization can be seen in our presentation found <ins>[here](https://docs.google.com/presentation/d/1lRZsxsvUOAIYw7n4Ee_mOIopluhwSt4a05aiQCqFNEw/edit#slide=id.g1a41337ac68_0_108)</ins> in slide 15.
 
-## Known Errors
+## Known Errors and Troubleshooting
+
 1. Script to save pointcloud data as a pcd file does not work
 
-2. RViz2 sometimes shows that the reference frame is invalid. In order to solve this, close all terminals, launch RViz2 first, then launch the basic_robot launch_sim.py, teleop keyboard and slam_toolbox before choosing the RViz2 configuration
+2. RViz2 sometimes shows that the reference frame (odom) or the map topic in the map display is invalid. In order to solve this, close all terminals, launch RViz2 first, then follow the above steps to launch the basic_robot launch_sim.py, teleop keyboard and slam_toolbox before choosing the RViz2 configuration
 
 
 
