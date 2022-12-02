@@ -8,7 +8,7 @@ To map an environment using a depth camera and then visualize the entire environ
 ## Reasoning
 There are multiple ways to map and visualize an environment in 2d that are available to users using ROS. The most common being using a lidar sensor and the Nav2 toolbox to map the environment and then RViz to view it. However, while there are ways to visualize the environment in 3D through the use of either 3D Lidar or Depth cameras, there are not too many easy solutions to visualize a completed 3d map due to how computationally heavy the data can be. Some of the available solutions involve using octomap (documentation can be found <ins>[here](http://octomap.github.io/)</ins>
 
-Our project proposes utilizing the PyVista package available in python to map and visualize the 3D environment. You can read more about the package <ins>[here](https://docs.pyvista.org/)</ins>
+Our project proposes utilizing the Open3D package available in python to map and visualize the 3D environment. You can read more about the package <ins>[here][(https://docs.pyvista.org/)](http://www.open3d.org/docs/release/index.html)</ins>
 
 ## Background
 The data being mapped is known as a point cloud. A point cloud is a set of discrete data points in space, each having their own x, y, z coordinates as well as other parameters such as the rgb color and the intensity. Point cloud data is usually stored in a .pcd file containing a header describing the data followed by the data
@@ -46,17 +46,9 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 
     <code>sudo apt install ros-foxy-slam-toolbox</code>
 
- - To run the slam_toolbox, the following command can be used:
-
-    <code>ros2 launch slam_toolbox online_async_launch.py</code>
-
  - To install teleop_twist keyboard, type the following in the command line:
 
     <code>sudo apt-get install ros-foxy-teleop-twist-keyboard</code>
-
- - To run the teleop_twist_keyboard, the following command can be used:
-
-    <code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
 
  - In addition Gazebo is required to run the simulation. For this project Gazebo 11 was used. To install Gazebo, type the following in the command line:
 
@@ -73,7 +65,19 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
     <code>sudo apt install python3-pip</code>
 
     <code>pip install xacro</code>
-
+    
+ - Install open3d to visualize the pcd data in python. 
+  
+    If using the conda environment
+  
+    <code>conda install -c open3d-admin open3d</code>
+    
+    If using pip
+    
+    <code>pip3 install open3d</code>
+    
+    Check <ins>[here](http://www.open3d.org/docs/release/getting_started.html)</ins> for more information on getting started with open3d
+    
  - Lastly: 
 
     <code>sudo apt update && sudo apt upgrade</code>
@@ -116,6 +120,41 @@ The data being mapped is known as a point cloud. A point cloud is a set of discr
 
     <code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
     
-8. 
+8. In a new command line terminal, launch the slam_toolbox is asynchronous mode
+
+    <code>ros2 launch slam_toolbox online_async_launch.py</code>
+    
+9. In a new command line terminal, launch rviz2
+
+    <code>rviz2</code>
+    
+10. Load the rviz configuration by going to file -> open config -> Desktop/G1FinalProject/src/basic_robot/config ->view_final_robot.rviz
+
+## What do we see?
+
+When the view_final_robot.rviz configuration is first run, it is in map mode and if you move the robot around, you should see the environment being mapped. However, what we are interested in is the 3D visualization. 
+To view the 3D visualization of the world, in the display panel to the left, uncheck the box next to the *Map* display option and check the box next to the pointcloud2 display.
+
+## Saving PointCloud data
+
+Our original goal was to be able to save the pointcloud data and visualize it using python. However, we had issues saving the data.A script attempting to parse the data can be found in the /src/basic_robot/basic_robot directory. However, this script gave a RTPS_Transport_SHM Error error which we were unable to resolve. To get around this, we found sample data online <ins>[here](http://redwood-data.org/indoor_lidar_rgbd/download.html)</ins> and used it to run our python scripts.
+
+## Running the Python scripts
+
+1. Download the data from the link above. We used the reconstruction file for the apartment. If using any other reconstruction, the corresponding filenames in the python scripts will have to be changed.
+
+2. Extract the file and place it inside the /PCD Python Scripts directory. 
+
+3. Use the point_cloud_sample_ply_pcd_convert.py file to convert the ply data obtained on the above website into a pcd dataset.
+
+4. Use point_cloud_sample_pcd.py to save the data
+
+## Known Errors
+1. Script to save pointcloud data as a pcd file does not work
+2. RViz2 sometimes shows that the reference frame is invalid. In order to solve this, close all terminals, launch RViz2 first, then launch the basic_robot launch_sim.py, teleop keyboard and slam_toolbox before choosing the RViz2 configuration
+
+
+
+
 
 
