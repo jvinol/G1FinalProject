@@ -11,7 +11,11 @@ There are multiple ways to map and visualize an environment in 2d that are avail
 Our project proposes utilizing the PyVista package available in python to map and visualize the 3D environment. You can read more about the package <ins>[here](https://docs.pyvista.org/)</ins>
 
 ## Background
-The data being mapped is known as a point cloud. A point cloud is a set of discrete data points in space, each having their own x, y, z coordinates as well as other parameters such as the rgb color and the intensity. Point cloud data is usually stored in a .pcd file 
+The data being mapped is known as a point cloud. A point cloud is a set of discrete data points in space, each having their own x, y, z coordinates as well as other parameters such as the rgb color and the intensity. Point cloud data is usually stored in a .pcd file containing a header describing the data followed by the data
+
+![image](https://github.com/jvinol/G1FinalProject/blob/16b4066c0564310ce5ae8aafed03647be812ef42/README%20Images/se-sample-museum.png)
+
+**Figure:** Point cloud visualization of a museum room <ins>[Source](https://help.sketchup.com/en/scan-essentials-sketchup/sample-point-cloud-data)</ins>
 
 ## Setup
 This project utilized an Oracle Virtual Machine running Ubuntu 20.04 Focal Fossa and ROS2 Foxy Fitzroy.
@@ -19,16 +23,34 @@ This project utilized an Oracle Virtual Machine running Ubuntu 20.04 Focal Fossa
  - To install Ubuntu 20.04 on a Virtual Machine, follow the instructions <ins>[here](https://linuxhint.com/install_ubuntu_virtualbox_2004/)</ins>
  - To install ROS2 Foxy, follow the instructions <ins>[here](https://docs.ros.org/en/foxy/Installation/Alternatives/Ubuntu-Development-Setup.html)</ins>
 
-In addition this project utilizes the slam_toolbox to give the user an option to map their environment in 2D and the teleop_twist keyboard to control the robot.
+In addition this project utilizes the slam_toolbox to give the user an option to map their environment in 2D and the teleop_twist_keyboard to control the robot.
 
-To install the slam_toolbox, type the following into the command line
+To install the slam_toolbox, type the following into the command line:
 
 <code>sudo apt install ros-foxy-slam-toolbox</code>
 
-To run the slam_toolbox, the following command can be used
+To run the slam_toolbox, the following command can be used:
 
 <code>ros2 launch slam_toolbox online_async_launch.py</code>
 
+To install teleop_twist keyboard, type the following in the command line:
 
+<code>sudo apt-get install ros-foxy-teleop-twist-keyboard</code>
+
+To run the teleop_twist_keyboard, the following command can be used:
+
+<code>ros2 run teleop_twist_keyboard teleop_twist_keyboard</code>
+
+In addition Gazebo is required to run the simulation. For this project Gazebo 11 was used. To install Gazebo, type the following in the command line:
+
+<code>curl -sSL http://get.gazebosim.org | sh</code>
+
+Ensure that git is installed by using the following command:
+
+<code>sudo apt install git</code>
+
+Lastly: 
+
+<code>sudo apt update && sudo apt upgrade</code>
 
 
